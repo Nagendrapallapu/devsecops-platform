@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import LinuxLabs from './pages/LinuxLabs';
@@ -13,6 +14,7 @@ import './styles/index.css';
 function App() {
   return (
     <Router>
+      <Analytics />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
