@@ -1,0 +1,142 @@
+.cloud-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.cloud-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ff9900, #0078d4, #4285f4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Provider Tabs */
+.provider-tabs {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.provider-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.provider-tab:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-main);
+}
+
+.provider-tab.active {
+  background: var(--provider-gradient);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Content */
+.cloud-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.provider-intro {
+  padding: 1.5rem;
+}
+
+.provider-intro h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.provider-intro p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.cloud-category {
+  margin-top: 0.5rem;
+}
+
+.cloud-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cloud-service-card {
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.cloud-service-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Equivalents Row */
+.equivalents {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.eq-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+
+.eq-tag.aws {
+  background: rgba(255, 153, 0, 0.12);
+  color: #ff9900;
+  border: 1px solid rgba(255, 153, 0, 0.25);
+}
+
+.eq-tag.azure {
+  background: rgba(0, 120, 212, 0.12);
+  color: #4ea8de;
+  border: 1px solid rgba(0, 120, 212, 0.25);
+}
+
+.eq-tag.gcp {
+  background: rgba(66, 133, 244, 0.12);
+  color: #7aafff;
+  border: 1px solid rgba(66, 133, 244, 0.25);
+}
+
+@media (max-width: 900px) {
+  .provider-tabs {
+    flex-direction: column;
+  }
+  .provider-tab {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,66 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Atmosphere */
+.glow-bg {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.bg-1 {
+  width: 600px;
+  height: 600px;
+  background: var(--accent-glow);
+  top: -200px;
+  right: -100px;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+.bg-2 {
+  width: 500px;
+  height: 500px;
+  background: var(--accent-glow-secondary);
+  bottom: -200px;
+  left: 10%;
+  animation: float 25s infinite ease-in-out alternate-reverse;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+  border-radius: 16px;
+  padding: 2rem;
+  overflow-y: auto;
+  position: relative;
+  /* subtle inner shadow to look like an inset glass pane */
+  box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.05), 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.content-wrapper::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+.content-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
