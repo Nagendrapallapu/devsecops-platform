@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Activity, Server, Shield, Cloud } from 'lucide-react';
+import { Activity, Server, Shield, Cloud, CheckCircle } from 'lucide-react';
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -20,6 +20,11 @@ const Dashboard = () => {
       >
         <h1>Platform Overview</h1>
         <p>Monitor your DevSecOps metrics and jump into practice labs.</p>
+        <div className="system-status-banner">
+          <CheckCircle size={18} color="#10b981" />
+          <span>All cloud services are operational</span>
+          <div className="status-pulse"></div>
+        </div>
       </motion.div>
 
       <div className="stats-grid">
