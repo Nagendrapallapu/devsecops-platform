@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "devsecops-platform",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
