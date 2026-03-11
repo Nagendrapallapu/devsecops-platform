@@ -286,3 +286,55 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 768px) {
+  .devops-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .devops-header p {
+    font-size: 0.95rem;
+  }
+
+  .tool-selector {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tool-selector::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tool-tab {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.85rem;
+    min-width: max-content;
+  }
+
+  .tool-intro {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tool-content {
+    padding-right: 0;
+  }
+
+  .topic-header-btn {
+    padding: 1rem;
+  }
+
+  .topic-body {
+    padding: 0 1rem 1rem;
+  }
+
+  .command-line {
+    flex-wrap: wrap;
+  }
+
+  .command-line code {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+}

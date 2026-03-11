@@ -169,3 +169,36 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 768px) {
+  .security-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .security-header p {
+    font-size: 0.95rem;
+  }
+
+  .sec-tool-selector {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .sec-tool-selector::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sec-tool-tab {
+    padding: 0.65rem 0.85rem;
+    min-width: max-content;
+  }
+
+  .sec-tool-intro {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .sec-tool-content {
+    padding-right: 0;
+  }
+}

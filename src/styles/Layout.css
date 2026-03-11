@@ -64,3 +64,32 @@
 .content-wrapper::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 16px;
+    padding-top: 70px; /* space for hamburger button */
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .content-wrapper {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .bg-1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bg-2 {
+    width: 250px;
+    height: 250px;
+  }
+}

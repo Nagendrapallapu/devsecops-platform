@@ -140,3 +140,38 @@
     justify-content: flex-start;
   }
 }
+
+@media (max-width: 768px) {
+  .cloud-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .cloud-header p {
+    font-size: 0.95rem;
+  }
+
+  .provider-tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .provider-intro {
+    padding: 1rem;
+  }
+
+  .provider-intro h2 {
+    font-size: 1.25rem;
+  }
+
+  .cloud-content {
+    padding-right: 0;
+  }
+
+  .equivalents {
+    gap: 0.35rem;
+  }
+
+  .eq-tag {
+    font-size: 0.65rem;
+  }
+}

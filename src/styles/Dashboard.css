@@ -194,3 +194,61 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .dashboard-header p {
+    font-size: 0.95rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .stat-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-details p {
+    font-size: 0.85rem;
+  }
+
+  .recent-activity, .quick-actions {
+    padding: 1rem;
+  }
+
+  .recent-activity h2, .quick-actions h2 {
+    font-size: 1.25rem;
+  }
+
+  .dashboard-container {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
