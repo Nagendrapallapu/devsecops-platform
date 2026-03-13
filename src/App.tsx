@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import LinuxLabs from './pages/LinuxLabs';
@@ -25,6 +26,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
+      <SpeedInsights />
     </Router>
   );
 }
