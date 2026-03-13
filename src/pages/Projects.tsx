@@ -14,7 +14,7 @@ const Projects = () => {
       category: 'CI/CD',
       icon: Server,
       difficulty: 'Advanced',
-      githubLink: '#',
+      githubLink: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero',
       demoLink: '#'
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
       category: 'Security',
       icon: Key,
       difficulty: 'Advanced',
-      githubLink: '#',
+      githubLink: 'https://github.com/joatmon08/hashicorp-aws-zero-trust',
       demoLink: '#'
     },
     {
@@ -36,7 +36,7 @@ const Projects = () => {
       category: 'Cloud',
       icon: ShieldCheck,
       difficulty: 'Intermediate',
-      githubLink: '#',
+      githubLink: 'https://github.com/globalbao/azure-policy-as-code',
       demoLink: '#'
     },
     {
@@ -47,7 +47,7 @@ const Projects = () => {
       category: 'Cloud',
       icon: Terminal,
       difficulty: 'Intermediate',
-      githubLink: '#',
+      githubLink: 'https://github.com/GoogleCloudPlatform/serverless-exp-samples',
       demoLink: '#'
     },
     {
@@ -58,7 +58,7 @@ const Projects = () => {
       category: 'IaC',
       icon: Cloud,
       difficulty: 'Advanced',
-      githubLink: '#',
+      githubLink: 'https://github.com/Adron/terraform-multi-cloud-demo',
       demoLink: '#'
     },
     {
@@ -69,7 +69,7 @@ const Projects = () => {
       category: 'CI/CD',
       icon: GitBranch,
       difficulty: 'Intermediate',
-      githubLink: '#',
+      githubLink: 'https://github.com/argoproj/argocd-example-apps',
       demoLink: '#'
     },
     {
@@ -80,7 +80,7 @@ const Projects = () => {
       category: 'Security',
       icon: ShieldCheck,
       difficulty: 'Intermediate',
-      githubLink: '#',
+      githubLink: 'https://github.com/falcosecurity/charts',
       demoLink: '#'
     },
     {
@@ -91,7 +91,7 @@ const Projects = () => {
       category: 'CI/CD',
       icon: Container,
       difficulty: 'Beginner',
-      githubLink: '#',
+      githubLink: 'https://github.com/docker/build-push-action',
       demoLink: '#'
     },
     {
@@ -102,7 +102,7 @@ const Projects = () => {
       category: 'IaC',
       icon: Terminal,
       difficulty: 'Advanced',
-      githubLink: '#',
+      githubLink: 'https://github.com/geerlingguy/ansible-for-devops',
       demoLink: '#'
     },
     {
@@ -113,7 +113,7 @@ const Projects = () => {
       category: 'Cloud',
       icon: Database,
       difficulty: 'Intermediate',
-      githubLink: '#',
+      githubLink: 'https://github.com/provo-sql/postgres-backup-s3',
       demoLink: '#'
     },
   ];
